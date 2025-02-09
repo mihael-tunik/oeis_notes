@@ -6,10 +6,10 @@ If you run the code, you'll get [the sequence](https://oeis.org/A052852), which 
 
 ### Bonus
 This interpretation with towers gives nice recurrence:
-$$T_n = n \sum_{k=0}^n C_{n-1}^k T_{n-(k+1)} $$
+$$T_n = n \sum_{k=0}^{n-1} C_{n-1}^k T_{n-(k+1)} $$
 
 Place tallest tower n ways and for each, place n-k-1 towers into n-1 place. 
-Each combination repeats for every T_{n-(k+1)} combinations.
+Each combination repeats for every $T_{n-(k+1)}$ combinations.
 
 Example:
 $$T_3 = 3(T_2 + 2 T_1 + 1) = 3 (4 + 2 + 1) = 21$$.
